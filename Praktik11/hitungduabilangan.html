@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan Dua Bilangan</title>
+</head>
+<body>
+
+    <h2>Penjumlahan Dua Bilangan</h2>
+
+    <label for="bilangan1">Bilangan 1:</label>
+    <input type="number" id="bilangan1" >
+
+    <p id="tandaPlus">+</p>
+
+    <label for="bilangan2">Bilangan 2:</label>
+    <input type="number" id="bilangan2" onChange="hitungPenjumlahan()">
+
+    <p id="tandaSamaDengan">=</p>
+
+    <label for="hasil">Hasil Penjumlahan:</label>
+    <input type="text" id="hasil" readonly>
+
+    <script>
+        function hitungPenjumlahan() {
+            // Mengambil nilai dari input bilangan1 dan bilangan2
+            let bilangan1 = document.getElementById('bilangan1').value;
+            let bilangan2 = document.getElementById('bilangan2').value;
+
+            // Melakukan penjumlahan
+            let hasil = parseFloat(bilangan1) + parseFloat(bilangan2);
+
+            // Menampilkan hasil pada input hasil
+            document.getElementById('hasil').value = hasil;
+
+            // Menampilkan tanda plus dan sama dengan
+            document.getElementById('tandaPlus')
+            document.getElementById('tandaSamaDengan')
+        }
+    </script>
+
+</body>
+</html>
