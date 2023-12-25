@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form validasi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap">
+</head>
+<body>
+  <div class="container">
+    <form autocomplete="off">
+      <h4>Pemesanan Tiket</h4>
+      <div class="input-section">
+        <label>Nama Pelanggan<span class="required-color">*</span></label>
+        <input type="text" placeholder="Masukkan Nama Anda" id="nama-pelanggan" required/>
+        <span id="nama-pelanggan-error" class="hide required-color-message">Inputan tidak valid</span>
+        <span id="empty-nama-pelanggan" class="hide required-color-message">Nama pelanggan tidak boleh dikosongkan</span>
+      </div>
+      <div class="input-section">
+        <label>Email<span class="required-color">*</span></label>
+        <input type="text" placeholder="Masukkan Email Anda" id="email-pelanggan" required/>
+        <span id="email-pelanggan-error" class="hide required-color-message">Inputan tidak valid</span>
+        <span id="empty-email-pelanggan" class="hide required-color-message">Email pelanggan tidak boleh dikosongkan</span>
+      </div>
+      <div class="input-section">
+        <label>Jam keberangkatan<span class="required-color">*</span></label>
+        <input type="text" placeholder="Masukkan Nama Anda" id="nama-pelanggan" required/>
+        <span id="nama-pelanggan-error" class="hide required-color-message">Inputan tidak valid</span>
+        <span id="empty-nama-pelanggan" class="hide required-color-message">Nama pelanggan tidak boleh dikosongkan</span>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
